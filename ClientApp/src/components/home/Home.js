@@ -5,7 +5,7 @@ import { post } from './../../helper/HttpClient';
 export function HomeComponent() {
     const [text, setText] = useState(process.env.REACT_APP_DEFAULT_TEXT);
 
-    const users = ['Rahul','Sharma','Goku','Vegeta','Freeza'];
+    const users = ['Rahul','Sharma','Goku','Vegeta','Freeza','Dholakpur','Dhoom3'];
     const onSave = () => {
         post('/api/home/savetext', {
             text,
