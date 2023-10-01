@@ -43,5 +43,11 @@ namespace FileUploadProject.Controllers
                 return Ok(new { success = false, message = ex.Message });
             }
         }
+
+        [HttpGet]
+        public IActionResult TestAPI()
+        {
+            return Ok("Hola");
+        }
     }
 }
