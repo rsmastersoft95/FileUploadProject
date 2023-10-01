@@ -1,0 +1,8 @@
+﻿.card-h-150{
+    height: 150px;
+    overflow-y:scroll;
+}
+.fit-img{
+    height:250px;
+    object-fit:cover;
+}

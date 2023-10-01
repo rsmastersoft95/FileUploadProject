@@ -1,0 +1,16 @@
+﻿---
+version: '3'
+
+services:
+    file-upload-project:
+        image: file-upload
+        container_name: file-upload-project
+        ports:
+            - 2355:80
+        volumes:
+            - d:/export:/app/ExportedFiles
+    rpc-service:
+        image: testingrpc
+        container_name: testing-rpc-service
+        ports:
+            - 2350:80

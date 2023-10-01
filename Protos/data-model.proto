@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "TestingServiceRPC";
+
+package calculate;
+
+// The greeting service definition.
+service Calculate{
+	rpc AddNumbers (AddTwoIntRequest) returns (AddTwoIntResponse);
+}
+service Testing{
+	rpc TestMessage(TestMessageRequest) returns (TestMessageResponse);
+}
+// The request message containing the user's name.
+
+// The response message containing the greetings.
+
+
+message AddTwoIntRequest {
+	int32 num1 = 1;
+	int32 num2 = 2;
+}
+
+message AddTwoIntResponse{
+	int32 result = 1;
+}
+
+message TestMessageRequest{
+	string name = 1;
+}
+message TestMessageResponse{
+	string message = 1;
+}
