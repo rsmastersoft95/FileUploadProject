@@ -1,6 +1,5 @@
 ﻿import React, { useState } from 'react';
 import { post } from './../../helper/HttpClient';
-import './Home.css';
 
 
 export function HomeComponent() {
