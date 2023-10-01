@@ -11,7 +11,7 @@ export function HomeComponent() {
         post('/api/home/savetext', {
             text,
         }).then(success => {
-            alert(success.message);
+            alert(`Hello ${success.message}`);
         }, error => {
             console.log("error",error);
         })

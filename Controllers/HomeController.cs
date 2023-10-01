@@ -49,5 +49,18 @@ namespace FileUploadProject.Controllers
             return Ok(new { success = true, message = "Success" });
         }
 
+        [HttpGet]
+        [Route("Digital2")]
+        public IActionResult Digital2()
+        {
+            return Ok("Success");
+        }
+
+        [HttpGet]
+        [Route("Digital3")]
+        public IActionResult Digital3()
+        {
+            return Ok(new { success = true, message = "Success" });
+        }
     }
 }
