@@ -44,7 +44,7 @@ namespace FileUploadProject.Controllers
             }
         }
         [HttpGet]
-        public IActionResult Test()
+        public IActionResult Digital()
         {
             return Ok(new { success = true, message = "Success" });
         }
